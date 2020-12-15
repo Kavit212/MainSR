@@ -1,5 +1,6 @@
 import tensorflow as tf
 from config import *
+import numpy as np
 
 class dataLoader(config):
     def __init__(self):
