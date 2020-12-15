@@ -73,7 +73,7 @@ def generate_TFRecord(label_path,tfrecord_file,patch_h,patch_w,stride):
 
     np.random.shuffle(labels)
     print('Num of patches:', len(labels))
-    print('Shape: [%d, %d, %d]' % (patch_h, patch_w, ch))
+    #print('Shape: [%d, %d, %d]' % (patch_h, patch_w, ch))
 
     writer = tf.io.TFRecordWriter(tfrecord_file)
     for i in range(len(labels)):
