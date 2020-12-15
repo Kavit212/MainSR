@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import os
 from config import *
 import dataLoader
+import numpy as np
 
 conf1 = config(args)
 conf_tf = tf.ConfigProto()
