@@ -14,6 +14,6 @@ class config(object):
 parser=ArgumentParser()
 
 parser.add_argument('--gpu', dest='gpu', type=str, default='0')
-parser.add_argument('--tfrecord', dest='tfrecord', type=str, default='train_SR_X2.tfrecord')
+parser.add_argument('--tfrecord', dest='tfrecord', type=str, default='train_MZSR.tfrecord')
 
 args=parser.parse_args()
