@@ -86,7 +86,7 @@ def generate_TFRecord(label_path,tfrecord_file,patch_h,patch_w,stride):
 if __name__=='__main__':
     parser=ArgumentParser()
     parser.add_argument('--labelpath', dest='labelpath', help='Path to HR images (./DIV2K_train_HR)')
-    parser.add_argument('--tfrecord', dest='tfrecord', help='Save path for tfrecord file', default='train_SR_MZSR')
+    parser.add_argument('--tfrecord', dest='tfrecord', help='Save path for tfrecord file', default='train_MZSR')
     options=parser.parse_args()
 
     labelpath=os.path.join(options.labelpath, '*.png')
