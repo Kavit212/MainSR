@@ -68,7 +68,7 @@ def generate_TFRecord(label_path,tfrecord_file,patch_h,patch_w,stride):
                 for j in range(0+offset,y-patch_w+1,stride):
                     patch_l = label[i:i + patch_h, j:j + patch_w]
 
-                    if np.log(gradients(patch_l.astype(np.float64)/255.)+1e-10) >= -6.0:
+                    if np.log(gradients(patch_l.astype(np.float64)/255.)+1e-10) >= 0.005:
                         labels.append(augmentation(patch_l,m).tobytes())
 
     np.random.shuffle(labels)
